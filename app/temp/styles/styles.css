@@ -1277,7 +1277,6 @@ Instead edit gulp/templates/sprite */
     }
 
 .primary-nav {
-
   padding-top: 10px;
 }
 
@@ -1315,7 +1314,7 @@ Instead edit gulp/templates/sprite */
 @media (min-width: 800px) {
 
 .primary-nav li {
-      padding: 20px;
+      padding-right: 20px;
       float: left;
       display: block
   }
@@ -1349,4 +1348,18 @@ Instead edit gulp/templates/sprite */
       padding: 12px 0;
       background-color: transparent
   }
+  }
+
+.reveal-item {
+  opacity: 0;
+  -webkit-transition: all 1.5s ease-out;
+  transition: all 1.5s ease-out;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.reveal-item--is-visible {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
