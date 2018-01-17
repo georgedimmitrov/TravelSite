@@ -27,7 +27,7 @@
   }
 
   &--gutters-small > div {
-    padding-right: 45px ;
+    padding-right: 45px;
   }
 
   &__b-margin-until-medium {
@@ -62,6 +62,7 @@
     &__medium-8--smaller {
       width: 63%;
     }
+
   }
 
   @mixin atLarge {
@@ -92,8 +93,9 @@
     &__large-8--smaller {
       width: 63%;
     }
-  }
 
+  }
+  
   /* Begin Equal Height Rules */
   &--equal-height-at-medium {
     @mixin atMedium {
@@ -104,6 +106,7 @@
       float: none;
       display: flex;
     }
+
   }
 
   &--equal-height-at-large {
@@ -115,5 +118,7 @@
       float: none;
       display: flex;
     }
+
   }
+
 }
