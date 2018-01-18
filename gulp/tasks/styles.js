@@ -7,10 +7,10 @@ const cssImport = require('postcss-import');
 const mixins = require('postcss-mixins');
 const hexrgba = require('postcss-hexrgba');
 
-gulp.task('styles', () => {
+gulp.task('styles', function() {
   return gulp.src('./app/assets/styles/styles.css')
     .pipe(postcss([cssImport, mixins, cssvars, nested, hexrgba, autoprefixer]))
-    .on('error', (errorInfo) => {
+    .on('error', function(errorInfo) {
       console.log(errorInfo.toString());
       this.emit('end');
     })
